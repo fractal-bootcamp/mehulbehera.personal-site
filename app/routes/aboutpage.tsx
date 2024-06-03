@@ -1,13 +1,12 @@
+import Navbar from './navigation';
+
 export default function About(){
 
     return(
         <div>
         
-            <h2>About</h2>
-
-            <p>
-                Hey I'm Mehul.
-            </p>
+            <Navbar/>
+            <p>About me</p>
         
         </div>
 

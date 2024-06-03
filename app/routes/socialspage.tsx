@@ -1,19 +1,26 @@
-export default function LinksPage(){
+import Navbar from './navigation';
+import LinkedinCard from './SocialCards/linkedincard';
+import GithubCard from './SocialCards/githubcard';
+
+function LinksPage(){
 
     return(
         <div>
+            <Navbar/>
+            <div className="flex wrap:wrap  justify-content:center ">
+            
+                <LinkedinCard/>
+                <GithubCard/>
         
-            <h2>Links to Socials</h2>
+            </div>
 
-            <p>
-                Github: <a href="https://github.com/mbehera32">Github</a> <br/>
-                Linkedin:  <a href="https://www.linkedin.com/in/mehul-behera/">Linkedin</a> <br/> 
-            </p>
-        
         </div>
+        
 
 
     );
 
 
 }
+
+export default LinksPage;

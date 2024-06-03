@@ -1,9 +1,11 @@
+import Navbar from './navigation';
+
 export default function Projects(){
 
     return(
         <div>
         
-            <h2>Projects</h2>
+            <Navbar/>
 
             <p>
                 Here is my project gallery.
