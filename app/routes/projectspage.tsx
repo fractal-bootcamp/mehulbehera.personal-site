@@ -81,22 +81,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-
-      {/* <div className="carousel carousel-center rounded-box">
-        <div className="carousel-item">
-          <LinkedinCard />
-        </div>
-        <div className="carousel-item">
-          <GithubCard />
-        </div>
-        <div className="carousel-item">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-            alt="Pizza"
-          />
-        </div>
-        
-      </div> */}
     </div>
   );
 }
