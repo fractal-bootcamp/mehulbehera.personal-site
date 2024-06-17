@@ -1,20 +1,20 @@
 function SurveyCard() {
   return (
-    <a
-      href=""
-      className="  hover:animate-wiggle flex flex-col items-center  rounded-lg shadow-lg md:flex-row md:max-w-xl hover:scale-105"
-    >
-      <img
-        className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-        src="/linkedin.png"
-        alt=""
-      />
-      <div className="flex flex-col justify-between p-4 leading-normal">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight">
-          Survey Project
-        </h5>
+    <div className="card w-96 bg-base-100 shadow-xl">
+      <figure>
+        <img
+          src="https://cezannehr.com/wp-content/uploads/2022/05/Pulse-survey.png"
+          alt="Shoes"
+        />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title">Survey</h2>
+        <p>This is my survey project</p>
+        <div className="card-actions justify-end">
+          <button className="btn btn-primary">View</button>
+        </div>
       </div>
-    </a>
+    </div>
   );
 }
 

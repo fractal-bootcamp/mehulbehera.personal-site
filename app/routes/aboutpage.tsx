@@ -7,6 +7,7 @@ import TicTacToeCard from "./ProjectCards/tictactoe";
 import React, { useState, useEffect } from "react";
 import { useTransition, animated } from "@react-spring/web";
 import shuffle from "lodash.shuffle";
+import { Frame, useMotionValue, useTransform, useAnimation } from "framer";
 
 const cardData = [
   { component: <LinkedinCard />, height: 96 },
@@ -58,7 +59,7 @@ export default function About() {
 
   //use effect to trigger rerender every second
   useEffect(() => {
-    const interval = setInterval(() => setRows(shuffle), 800);
+    const interval = setInterval(() => setRows(shuffle), 1500);
     return () => clearInterval(interval);
   }, []);
 
