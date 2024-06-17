@@ -9,7 +9,10 @@ function SurveyCard() {
       </figure>
       <div className="card-body">
         <h2 className="card-title">Survey</h2>
-        <p>This is my survey project</p>
+        <p>
+          This is my survey project. Its built using React, ExpressJS, and
+          Prisma
+        </p>
         <div className="card-actions justify-end">
           <button className="btn btn-primary">View</button>
         </div>
