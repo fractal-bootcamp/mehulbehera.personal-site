@@ -1,19 +1,18 @@
 function AboutCard() {
   return (
-    <div className="items-center">
-      <div className="relative max-w-xl mx-auto mt-20 items-center">
+    <div className=" animate-tada items-center">
+      <div className="relative max-w-full w-full mx-auto mt-20 items-center">
         <img
-          className="h-96 md:w-full md:max-w-full md:object-fill md:rounded-lg"
+          className="h-96 md:w-full md:max-w-full md:object-fill"
           src="https://wallpapergod.com/images/hd/widescreen-1920X1080-wallpaper-qa91zekh1cl86k1k.jpeg"
           alt="Random image"
         />
-
         <div className="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <h2 className="text-white text-3xl font-bold">Welcome</h2>
         </div>
       </div>
-      <div className="flex flex-row flex-wrap my-10 rounded-lg bg-clip-border shadow-lg md:max-w-full md:mx-40 items-center justify-items-center ">
+      <div className="animate-fadeinbouncedown flex flex-row flex-wrap my-10 rounded-lg bg-clip-border shadow-lg md:max-w-full md:mx-40 items-center justify-items-center ">
         <img
           className="md:object-cover md:h-48 md:w-48 md:rounded-full md:m-6"
           src="/ProfilePic.png"
@@ -39,7 +38,7 @@ function AboutCard() {
           My Journey:
         </h5>
         <hr className="w-screen border-black" />
-        <div className="flex flex-row flex-wrap">
+        <div className="animate-fadeinbouncedown flex flex-row flex-wrap">
           <div className="relative flex mx-6 flex-col my-6  shadow-md bg-clip-border rounded-xl w-96">
             <div className="relative mx-4 mt-4  rounded-xl h-100">
               <img
@@ -95,7 +94,7 @@ function AboutCard() {
         </h5>
         <hr className="w-screen border-black" />
 
-        <div className="grid mb-8    rounded-lg   md:mb-12 md:grid-cols-2 gap-7 p-8">
+        <div className="animate-fadeinbouncedown grid mb-8    rounded-lg   md:mb-12 md:grid-cols-2 gap-7 p-8">
           <figure className="flex flex-col items-center justify-center p-8 text-center shadow-md bg-clip-border rounded-lg  ">
             <blockquote className="max-w-2xl mx-auto mb-4  lg:mb-8 ">
               <h3 className="text-lg font-semibold ">Travelling</h3>

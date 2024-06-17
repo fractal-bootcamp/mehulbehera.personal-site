@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import animations from './node_modules/@midudev/tailwind-animations'
 
 export default {
   content: ['./app/**/*.{js,jsx,ts,tsx}'],
@@ -6,6 +7,7 @@ export default {
     extend: {
       animation: {
         wiggle: "wiggle 0.5s ease-in-out infinite",
+        fadeinbouncedown: 'fade-in-bouncedown 1s ease-in-out 0.25s 1',
       },
       keyframes: {
         wiggle: {
@@ -14,6 +16,24 @@ export default {
           },
           "50%": {
             transform: "rotate(5deg)",
+          },
+        },
+        "fade-in-bouncedown": {
+          "0%": {
+            opacity: "0",
+            transform: "translate3d(0%, -100%, 0)",
+          },
+          "33%": {
+            opacity: "0.5",
+            transform: "translate3d(0%, 0%, 0)",
+          },
+          "66%": {
+            opacity: "0.7",
+            transform: "translate3d(0%, -20%, 0)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translate3d(0, 0, 0)",
           },
         },
       },
@@ -29,7 +49,7 @@ export default {
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
-  plugins: [require('daisyui'), require("tailwindcss-animate")],
+  plugins: [require('daisyui'), require("tailwindcss-animate"), animations],
 } satisfies Config
 
 

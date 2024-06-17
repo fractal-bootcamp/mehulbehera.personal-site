@@ -2,7 +2,7 @@ function LinkedinCard() {
   return (
     <a
       href="https://www.linkedin.com/in/mehul-behera/"
-      className="  hover:animate-wiggle flex flex-col items-center  rounded-lg shadow-lg md:flex-row md:max-w-xl "
+      className=" hover:animate-wiggle flex flex-col items-center  rounded-lg shadow-lg md:flex-row md:max-w-xl "
     >
       <img
         className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
