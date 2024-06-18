@@ -9,7 +9,7 @@ function AboutCard() {
         />
         <div className="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <h2 className="text-white text-3xl font-bold">Welcome</h2>
+          <h2 className="text-white text-3xl font-bold">Placeholder</h2>
         </div>
       </div>
       <div className="animate-fadeinbouncedown flex flex-row flex-wrap my-10 rounded-lg bg-clip-border shadow-lg md:max-w-full md:mx-40 items-center justify-items-center ">
