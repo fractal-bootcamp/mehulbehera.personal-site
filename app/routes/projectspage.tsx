@@ -5,14 +5,14 @@ import ChatBotCard from "./ProjectCards/chatbot";
 import SurveyCard from "./ProjectCards/survey";
 import TicTacToeCard from "./ProjectCards/tictactoe";
 import Navbar from "./navigation";
-import ExampleCard from "./ProjectCards/example";
+import GrooviverseCard from "./ProjectCards/grooviverse";
 
 // Your array of card components
 const cards = [
   <ChatBotCard key={1} />,
   <SurveyCard key={2} />,
   <TicTacToeCard key={3} />,
-  <ExampleCard key={4} />,
+  <GrooviverseCard key={4} />,
   // Add more card components as needed
 ];
 
@@ -27,8 +27,7 @@ const to = (i) => ({
 const from = () => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
 const trans = (r, s) =>
-  `perspective(1500px) rotateX(30deg) rotateY(${
-    r / 10
+  `perspective(1500px) rotateX(30deg) rotateY(${r / 10
   }deg) rotateZ(${r}deg) scale(${s})`;
 
 function Deck() {
