@@ -12,9 +12,9 @@ function TicTacToeCard() {
       <div className="card-body">
         <h2 className="card-title">TicTacToe</h2>
         <p>
-          This is my TicTacToe Project. Its built using react, tailwind, and
-          expressJS. You can against other users or against an AI made using the
-          minimax algorithm
+          This is my TicTacToe Project. Its built using React, Tailwind, and
+          ExpressJS. You can play against other users locally or against an AI
+          made using the minimax algorithm
         </p>
       </div>
     </a>
