@@ -1,16 +1,10 @@
+import Background from "./background";
+
 function AboutCard() {
   return (
     <div className=" animate-tada items-center">
       <div className="relative max-w-full w-full mx-auto mt-20 items-center">
-        <img
-          className="h-96 md:w-full md:max-w-full md:object-fill"
-          src="https://wallpapergod.com/images/hd/widescreen-1920X1080-wallpaper-qa91zekh1cl86k1k.jpeg"
-          alt="Random image"
-        />
-        <div className="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h2 className="text-white text-3xl font-bold">Placeholder</h2>
-        </div>
+        <Background />
       </div>
       <div className="animate-fadeinbouncedown flex flex-row flex-wrap my-10 rounded-lg bg-clip-border shadow-lg md:max-w-full md:mx-40 items-center justify-items-center ">
         <img
@@ -74,7 +68,7 @@ function AboutCard() {
           <div className="relative mx-6 flex flex-col my-6  shadow-md bg-clip-border rounded-xl w-96">
             <div className="relative mx-4 mt-4  rounded-xl h-100">
               <img
-                src="https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1718236800&semt=ais_user"
+                src="/bitmojiLaptop.png"
                 alt="profile-picture"
                 className="rounded-full"
               />
