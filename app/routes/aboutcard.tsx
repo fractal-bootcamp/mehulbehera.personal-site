@@ -14,8 +14,8 @@ function AboutCard() {
       </div>
       <div className="animate-fadeinbouncedown flex flex-row flex-wrap my-10 rounded-lg bg-clip-border shadow-lg md:max-w-full md:mx-40 items-center justify-items-center ">
         <img
-          className="md:object-cover md:h-48 md:w-48 md:rounded-full md:m-6"
-          src="/ProfilePic.png"
+          className="md:object-cover md:h-48 md:w-48 md:m-6"
+          src="/bitmojiWave.png"
           alt=""
         />
         <div className="flex class flex-col p-4 leading-normal">

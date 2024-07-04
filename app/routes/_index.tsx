@@ -5,8 +5,8 @@ import AboutCard from "./aboutcard";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Mehul's Portfolio" },
+    { name: "description", content: "Welcome to my portfolio!" },
   ];
 };
 
