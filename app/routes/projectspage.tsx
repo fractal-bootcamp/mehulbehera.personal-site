@@ -1,7 +1,7 @@
 import React from "react";
 import { useSprings, animated, to as interpolate } from "@react-spring/web";
 import { useDrag } from "react-use-gesture";
-import ChatBotCard from "./ProjectCards/chatbot";
+import ArtProjectCard from "./ProjectCards/artproject";
 import SurveyCard from "./ProjectCards/survey";
 import TicTacToeCard from "./ProjectCards/tictactoe";
 import Navbar from "./navigation";
@@ -9,10 +9,9 @@ import GrooviverseCard from "./ProjectCards/grooviverse";
 
 // Your array of card components
 const cards = [
-  <ChatBotCard key={1} />,
-  <SurveyCard key={2} />,
-  <TicTacToeCard key={3} />,
-  <GrooviverseCard key={4} />,
+  <ArtProjectCard key={1} />,
+  <TicTacToeCard key={2} />,
+  <GrooviverseCard key={3} />,
   // Add more card components as needed
 ];
 
