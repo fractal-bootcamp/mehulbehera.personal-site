@@ -1,7 +1,7 @@
 import Navbar from "./navigation";
 import LinkedinCard from "./SocialCards/linkedincard";
 import GithubCard from "./SocialCards/githubcard";
-import SurveyCard from "./ProjectCards/survey";
+import SurveyCard from "./ProjectCards/moviegraph";
 import ChatBotCard from "./ProjectCards/artproject";
 import TicTacToeCard from "./ProjectCards/tictactoe";
 import React, { useState, useEffect } from "react";
