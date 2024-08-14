@@ -2,16 +2,23 @@ import React from "react";
 import { useSprings, animated, to as interpolate } from "@react-spring/web";
 import { useDrag } from "react-use-gesture";
 import ArtProjectCard from "./ProjectCards/artproject";
-import SurveyCard from "./ProjectCards/survey";
+import MovieGraphCard from "./ProjectCards/moviegraph";
 import TicTacToeCard from "./ProjectCards/tictactoe";
 import Navbar from "./navigation";
 import GrooviverseCard from "./ProjectCards/grooviverse";
+import RecipeGenCard from "./ProjectCards/recipegen";
+import PersonalSiteGeneratorCard from "./ProjectCards/personalsitegen";
+import InfiniteCraftCard from "./ProjectCards/infinitecraft";
 
 // Your array of card components
 const cards = [
+  <InfiniteCraftCard key={7} />,
   <ArtProjectCard key={1} />,
   <TicTacToeCard key={2} />,
+  <RecipeGenCard key={5} />,
   <GrooviverseCard key={3} />,
+  <MovieGraphCard key={4} />,
+  <PersonalSiteGeneratorCard key={6} />,
   // Add more card components as needed
 ];
 
@@ -21,7 +28,7 @@ const to = (i) => ({
   y: i * -4,
   scale: 1,
   rot: -10 + Math.random() * 20,
-  delay: i * 100,
+  delay: 0,
 });
 const from = () => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
@@ -29,7 +36,7 @@ const trans = (r, s) =>
   `perspective(1500px) rotateX(30deg) rotateY(${r / 10
   }deg) rotateZ(${r}deg) scale(${s})`;
 
-function Deck() {
+export function Deck() {
   const [gone] = React.useState(() => new Set()); // The set flags all the cards that are flicked out
   const [props, api] = useSprings(cards.length, (i) => ({
     ...to(i),
@@ -51,7 +58,7 @@ function Deck() {
           x,
           rot,
           scale,
-          delay: undefined,
+          delay: 0,
           config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 },
         };
       });
@@ -91,13 +98,10 @@ function Deck() {
   );
 }
 
-export default function App() {
+export default function ProjectsPage() {
   return (
     <>
-      <Navbar />
-      <div className="flex justify-center items-center h-screen">
-        <Deck />
-      </div>
+      <Deck />
     </>
   );
 }

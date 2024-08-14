@@ -6,19 +6,6 @@ function Navbar() {
           <a className="btn btn-ghost text-xl">Mehul's Portfolio</a>
         </div>
         <div className="navbar-center hidden lg:flex"></div>
-        <div className="navbar-end">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a href="/">About Me</a>
-            </li>
-            <li>
-              <a href="projectspage">Projects</a>
-            </li>
-            <li>
-              <a href="socialspage">Socials</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </>
   );
